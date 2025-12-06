@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AJo's STORE <span class="dot"></span></h1>
+        <span>Your satisfaction, our promise.</span>
+    </header>
+
+    <main>
+        <div class="top-section">
+            <section style="flex: 2;">
+                <h2>Our Products</h2>
+                <div id="search-area"></div>
+                <div id="products"></div>
+            </section>
+             <section style="margin-top: 30px; max-width: 400px;">
+    <h2>Checkout <img id="checkout-dancer" src="gifs/dancer.gif" alt="" /></h2>
+
+</section>
+
+            <section style="flex: 1;">
+                <h2>Your Cart</h2>
+                <div id="cart"></div>
+                <h3 id="cart-total"></h3>
+                <div id="cart-tips">
+    <h4>Shopping tips</h4>
+    <ul>
+        <li>⭐ Add 2+ items to get a bigger total to practice your cart.</li>
+        <li>🎧 Try filtering by category to find accessories faster.</li>
+        <li>📦 Place a test order and see the success popup.</li>
+    </ul>
+</div>
+
+            </section>
+
+
+        </div>
+
+        <section style="margin-top: 30px; max-width: 400px;">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label>
+                    Name:
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    Address:
+                    <input type="text" id="address" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="email" required>
+                </label>
+                <button type="submit">Place Order</button>
+            </form>
+
+            <p id="order-message"></p>
+        </section>
+
+        <div id="success-overlay" style="display:none;">
+            <div id="success-box">
+                <h3>Order Placed 🎉</h3>
+                <p id="success-text"></p>
+                <button id="close-success">Close</button>
+            </div>
+        </div>
+        <div id="product-modal" style="display:none;">
+    <div id="product-modal-box">
+        <h3 id="pm-name"></h3>
+        <img id="pm-image" alt="" />
+        <p id="pm-category"></p>
+        <p id="pm-rating"></p>
+        <p id="pm-description"></p>
+        <p id="pm-price"></p>
+        <button id="pm-add-to-cart">Add to Cart</button>
+        <button id="pm-close">Close</button>
+    </div>
+</div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
